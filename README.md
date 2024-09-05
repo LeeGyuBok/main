@@ -15,4 +15,6 @@ https://youtu.be/W9V4sujIsmU
 애니팡 모작 유튜브 영상 URL.
 https://youtu.be/i6UIrJH7xsM
 
+디펜스게임 유튜브 영상은 준비중입니다.
+
 각 영상에는 자막이 존재합니다.
