@@ -22,3 +22,4 @@ https://youtu.be/i6UIrJH7xsM
 https://github.com/LeeGyuBok/ERwithUnitychan
 추가로 제작중이 개인 포트폴리오입니다. 맵에서 상호작용이 가능한 오브젝트를 찾아 아이템을 수집하고 퀘스트를 진행하는 게임입니다.
 TPS카메라를 이용한 RPG 느낌의 게임으로 퀘스트 시스템, 아이템 시스템등을 구현해보고있습니다.
+에셋을 포함한 폴더가 매우 커서 코드만 업로드하고있으며 푸시가 가능해질 때 모두 푸시할 예정입니다. 코드는 UnityChan/Scripts에 존재합니다.
