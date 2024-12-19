@@ -93,12 +93,13 @@ public class MySecondAStar : MortalManager<MySecondAStar>
     {
         //Debug.Log(Grid.GetLength(0) + "x" + Grid.GetLength(1) + "z");
         //Debug.Log(StartNode.WorldPosition);
+        ImmortalCamera.Instance.gameObject.transform.position = new Vector3(0f, 25f, 0f);
     }
 
     public void Spawn()
     {
         Initialize();
-        Vector3 spawn = StartNode.WorldPosition + new Vector3(0, 0.5f, 0);
+        Vector3 spawn = StartNode.WorldPosition + new Vector3(0, 0.6f, 0);
         Instantiate(myOperator, spawn, quaternion.identity);
     }
 
@@ -115,7 +116,7 @@ public class MySecondAStar : MortalManager<MySecondAStar>
     private void Initialize()
     {
         int random = UnityEngine.Random.Range(0, MapPrefabs.Count);
-        GameObject selectedMap = Instantiate(MapPrefabs[random], Vector3.zero, Quaternion.identity);
+        GameObject selectedMap = Instantiate(MapPrefabs[random], new Vector3(0,0,-6f), Quaternion.identity);
         planeObject = selectedMap.transform.GetChild(0).gameObject;
         
         if (planeObject == null)

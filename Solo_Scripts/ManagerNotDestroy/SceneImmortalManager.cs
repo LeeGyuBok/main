@@ -39,6 +39,7 @@ public class SceneImmortalManager : ImmortalObject<SceneImmortalManager>, ISubje
     {
         //순차적으로 검사한다. 만약 첫번째 조건에서 들어맞으면 if문 내부로 들어간다.
         //생각해보니까 모두 쟤네들이 아니어야된다... 난 멍청했다..
+        //UiScene을 넘겨준다
         if (!sceneName.Equals(uiSceneNameList[0]) && !sceneName.Equals(uiSceneNameList[1]) && !sceneName.Equals(uiSceneNameList[7]))
         {
             for (int i = 0; i < observers.Count; i++)

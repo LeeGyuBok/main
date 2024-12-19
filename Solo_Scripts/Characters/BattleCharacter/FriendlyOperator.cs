@@ -283,7 +283,7 @@ public abstract class FriendlyOperator : OperatorBattleStatus, ILevel, ITrustabl
     
     void OnDrawGizmos()
     {
-        Physics.OverlapSphereNonAlloc(CharacterRigidbody.position, Sight, hitColliders, EnemyLayerMask);
+        //Physics.OverlapSphereNonAlloc(CharacterRigidbody.position, Sight, hitColliders, EnemyLayerMask);
             
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(CharacterRigidbody.position, Sight);

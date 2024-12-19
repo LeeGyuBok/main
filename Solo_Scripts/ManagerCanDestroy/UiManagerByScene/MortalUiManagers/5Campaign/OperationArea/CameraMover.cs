@@ -35,6 +35,10 @@ public class CameraMover : MonoBehaviour
 
     private void CameraMovement()
     {
+        if (OperationAreaUiManager.Instance.currentAreaState.GetType() == typeof(OperationAreaDetail) || OperationAreaUiManager.Instance.IsMoveCam)
+        {
+            return;
+        }
         Vector2 mousePosition = Input.mousePosition;
         mouseToCenterDistance = Vector2.Distance(screenCenter, mousePosition);
         Vector2 mainDirection = Vector2.zero;
