@@ -2,23 +2,46 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-
+public enum PlayMode
+{
+    Archive,
+    CardGame
+}
 public class UISide_ImmortalGameManager : ImmortalObject<UISide_ImmortalGameManager>
 {
     [SerializeField] private List<FriendlyOperator> characterPrefab;
     public List<FriendlyOperator> CharacterPrefab => characterPrefab;
 
-    private FriendlyOperator selectedOperator;
+    public FriendlyOperator SelectedOperator { get; private set; }
+    
+    public ScenarioJson selectedScenarioJsonData { get; private set; }
+    
+    public ScenarioBook selectedScenarioBook { get; private set; }
+    
+    public int OperatorCurrentTrust { get; private set; }
+    
+    public PlayMode SelectedPlayMode { get; private set; }
 
-
+    public void SetPlayMode(PlayMode playMode)
+    {
+        SelectedPlayMode = playMode;
+    }
+    
     public void SelectOperator(FriendlyOperator selectOperator)
     {
-        selectedOperator = selectOperator;
+        SelectedOperator = selectOperator;
+        selectedScenarioJsonData = UISide_ImmortalJsonManager.Instance.ReadScenarioData(SelectedOperator.TrustData.CharacterName);
+        OperatorCurrentTrust = selectedScenarioJsonData.CurrentTrust;
+    }
+
+    public void SetScenarioBook(ScenarioBook scenarioBook)
+    {
+        selectedScenarioBook = scenarioBook;
     }
 
     public void DeselectOperator()
     {
-        selectedOperator = null;
+        SelectedOperator = null;
     }
 
     public void ExitGame()

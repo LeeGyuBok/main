@@ -35,6 +35,7 @@ public class UISide_CardGameUiManager : MortalManager<UISide_CardGameUiManager>
         UISide_CardGameObjectManager.Instance.ShowSecondLargeCard();
 
         StartCoroutine(ShowDelayButton(AddNewCardFromOpponentDeckButton));
+        StartCoroutine(ShowDelayButton(ShowResultButton));
     }
 
     public void AddNewCardFromOpponentCardList()
@@ -63,7 +64,7 @@ public class UISide_CardGameUiManager : MortalManager<UISide_CardGameUiManager>
 
     public void AskQuestion()
     {
-        //UISide_ImmortalSceneManager.Instance.
+        UISide_ImmortalSceneManager.Instance.LoadSelectQuestionScene();
     }
 
     public void GoToMain()
@@ -89,12 +90,19 @@ public class UISide_CardGameUiManager : MortalManager<UISide_CardGameUiManager>
                 ResultPanel.GetComponentInChildren<TextMeshProUGUI>().text = $"{result.ToString()}";
                 break;
         }
-        ResultPanel.SetActive(true);
+
+        StartCoroutine(ShowDelayGameObject(ResultPanel));
     }
 
     private IEnumerator ShowDelayButton(Button button)
     {
-        yield return new WaitForSeconds(1.8f);
+        yield return new WaitForSeconds(2.2f);
         button.gameObject.SetActive(true);
+    }
+    
+    private IEnumerator ShowDelayGameObject(GameObject targetObject)
+    {
+        yield return new WaitForSeconds(2.2f);
+        targetObject.SetActive(true);
     }
 }

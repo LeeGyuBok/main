@@ -332,7 +332,7 @@ public class UISide_CardGameObjectManager : MortalManager<UISide_CardGameObjectM
         //Vector3 direction = (targetObject - card.GetComponent<RectTransform>().localPosition).normalized;
         while (targetPosition != startPosition)
         {
-            card.transform.position = Vector3.MoveTowards(card.transform.position, targetPosition, cardMoveSpeed*1.8f * Time.fixedDeltaTime);
+            card.transform.position = Vector3.MoveTowards(card.transform.position, targetPosition, cardMoveSpeed*0.8f * Time.fixedDeltaTime);
             //Quaternion.RotateTowards(card.transform.rotation, targetRotation, 20f * Time.fixedDeltaTime);
             startPosition = card.transform.position;
             yield return null;

@@ -69,6 +69,20 @@ public class UISide_ImmortalSceneManager : ImmortalObject<UISide_ImmortalSceneMa
         SetActiveScene(uiSceneNameList[2], scene);
     }
     
+    public void LoadSelectQuestionScene()
+    {
+        //현재 씬 가져와서
+        Scene scene = SceneManager.GetActiveScene();
+        SetActiveScene(uiSceneNameList[3], scene);
+    }
+    
+    public void LoadReceiveAnswerScene()
+    {
+        //현재 씬 가져와서
+        Scene scene = SceneManager.GetActiveScene();
+        SetActiveScene(uiSceneNameList[4], scene);
+    }
+    
     
     private void SetActiveScene(string loadingSceneName, Scene unloadingScene)
     {

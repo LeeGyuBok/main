@@ -379,10 +379,14 @@ MonoBehaviour:
   - UISide_MainScene
   - UISide_InCardGame
   - UISide_ArchiveScene
+  - UISide_SelectQuestionScene
+  - UISide_ReceiveAnswerScene
   objectSceneNameList:
   - UISide_MainSceneObject
   - UISide_InCardGameObject
   - UISide_ArchiveSceneObject
+  - UISide_SelectQuestionObjectScene
+  - UISide_ReceiveAnswerObjectScene
 --- !u!1 &246163985
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,12 +569,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterPrefab:
-  - {fileID: 6790643949580818319, guid: c49f334f809270e47ba83bd184c16e7a, type: 3}
-  - {fileID: 8626658061278427015, guid: 3aeb79501f8715e4b9c739bb7556835f, type: 3}
-  - {fileID: 6510474872315583992, guid: 1b3127a660deef246b8a8ee51ebd4442, type: 3}
-  - {fileID: 5696893348011053683, guid: 6ae3b6b8727cf784d951cfcd01d42222, type: 3}
-  - {fileID: 895463738843711436, guid: 71bf7df7c4a75be489d93377c9ea82aa, type: 3}
-  - {fileID: 8698606701016545256, guid: 17afcaabe981ffa4da4df207970f145a, type: 3}
   - {fileID: 6790643949580818319, guid: c49f334f809270e47ba83bd184c16e7a, type: 3}
   - {fileID: 8626658061278427015, guid: 3aeb79501f8715e4b9c739bb7556835f, type: 3}
   - {fileID: 6510474872315583992, guid: 1b3127a660deef246b8a8ee51ebd4442, type: 3}
@@ -2172,6 +2170,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb7ca3e9f1448d4d96a57db3190bba6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1215571862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1215571864}
+  - component: {fileID: 1215571863}
+  m_Layer: 0
+  m_Name: ImmortalJsonManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1215571863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215571862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd1dbdd3a7644f54fa76c67656bd5d0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1215571864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215571862}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 373.47012, y: 670.8079, z: -0.002699684}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1310225874
 GameObject:
   m_ObjectHideFlags: 0
@@ -3085,3 +3127,4 @@ SceneRoots:
   - {fileID: 307531543}
   - {fileID: 169534154}
   - {fileID: 911882421}
+  - {fileID: 1215571864}

@@ -1259,10 +1259,10 @@ MonoBehaviour:
   npcHandsPosition: {fileID: 611155550}
   playerHandsPosition: {fileID: 1578764046}
   objectCanvas: {fileID: 834537467}
-  cardMoveSpeed: 300
+  cardMoveSpeed: 200
+  mainCardMaterial: {fileID: 2100000, guid: dd3fbcba00736834c9ddfd8aa88d0349, type: 2}
   secondaryCardMaterial: {fileID: 2100000, guid: 0de2747df319e0144aa0232c8c6ff999,
     type: 2}
-  mainCardMaterial: {fileID: 2100000, guid: dd3fbcba00736834c9ddfd8aa88d0349, type: 2}
 --- !u!4 &1842574312
 Transform:
   m_ObjectHideFlags: 0

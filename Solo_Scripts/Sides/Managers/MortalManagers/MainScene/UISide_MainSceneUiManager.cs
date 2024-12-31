@@ -51,13 +51,13 @@ public class UISide_MainSceneUiManager : MortalManager<UISide_MainSceneUiManager
     public void EnterGameWithNpc()
     {
         scrollView.SetActive(true);
-        contentsIndex = 1;
+        UISide_ImmortalGameManager.Instance.SetPlayMode(PlayMode.CardGame);
     }
     
     public void EnterArchiveAboutNpc()
     {
         scrollView.SetActive(true);
-        contentsIndex = 2;
+        UISide_ImmortalGameManager.Instance.SetPlayMode(PlayMode.Archive);
     }
 
     public void ExitScrollView()
@@ -72,15 +72,14 @@ public class UISide_MainSceneUiManager : MortalManager<UISide_MainSceneUiManager
 
     public void LoadScene()
     {
-        if (contentsIndex == 1)
+        switch (UISide_ImmortalGameManager.Instance.SelectedPlayMode)
         {
-            UISide_ImmortalSceneManager.Instance.LoadGameScene();
-            return;
-        }
-
-        if (contentsIndex == 2)
-        {
-            UISide_ImmortalSceneManager.Instance.LoadArchiveScene();    
+            case PlayMode.Archive:
+                UISide_ImmortalSceneManager.Instance.LoadSelectQuestionScene();    
+                break;
+            case PlayMode.CardGame:
+                UISide_ImmortalSceneManager.Instance.LoadGameScene();
+                break;
         }
     }
 
@@ -89,6 +88,7 @@ public class UISide_MainSceneUiManager : MortalManager<UISide_MainSceneUiManager
     private void SetOperatorData(Button button)
     {
         UISide_ImmortalGameManager.Instance.SelectOperator(dataByButton[button]);
+        UISide_ImmortalJsonManager.Instance.SetSelectedCharacterName(dataByButton[button]);
         confirmPanel.SetActive(true);
     }
     //버튼 동적생성시 최적화하기.
@@ -99,7 +99,7 @@ public class UISide_MainSceneUiManager : MortalManager<UISide_MainSceneUiManager
         {
             // 첫 번째 버튼을 가져와 마지막으로 이동
             Transform firstButton = scrollViewParent.GetChild(ShowingfirstIndex);
-            firstButton.transform.GetComponentInChildren<TextMeshProUGUI>().text = indexDictionary[ShowinglastIndex + 1].TrustData.CharacterName;
+            firstButton.transform.GetComponentInChildren<TextMeshProUGUI>().text = indexDictionary[ShowinglastIndex + 1].TrustData.ScenarioName;
             firstButton.SetAsLastSibling();
 
             // Content의 위치를 조정해 "순환" 효과
