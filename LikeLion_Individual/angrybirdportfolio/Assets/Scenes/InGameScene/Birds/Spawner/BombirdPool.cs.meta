@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 9c489e8718db4434c99d45fd2bcb11ad
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_BombirdPrefab: {fileID: 2669782838022836822, guid: 4b984425e68d5d443b60e439cfb180cd, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
