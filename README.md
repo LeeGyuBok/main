@@ -16,20 +16,27 @@
 
 ChimeraSimulator 영상 URL: https://youtu.be/4GUWe5mN1kc
 
+//
+
 LikeLion_Individual
 
 앵그리버드 모작 유튜브 영상 URL: https://youtu.be/W9V4sujIsmU
 
 주요 스크립트 바로가기: https://github.com/LeeGyuBok/main/tree/main/LikeLion_Individual/angrybirdportfolio/Assets/Scenes/InGameScene/Birds/Bird
 
+//
+
 애니팡 모작 유튜브 영상 URL: https://youtu.be/i6UIrJH7xsM
 
 스크립트 바로가기: https://github.com/LeeGyuBok/main/tree/main/LikeLion_Individual/BlockPangportfolio/Assets/AniPang_portfolio/Scripts
+
+//
 
 디펜스게임 유튜브 영상 URL: https://www.youtube.com/watch?v=SJBIS6LWEjU
 
 스크립트 및 폴더 바로가기: https://github.com/LeeGyuBok/main/tree/main/LikeLion_Individual/Defenceportfolio/Assets/Defence/Scripts
 
+//
 
 LikeLion_Team
 
@@ -37,6 +44,7 @@ LikeLion_Team
 
 팀 포트폴리오의 버전은 2022.3.30f1 입니다.
 
+//
 
 팀 포트폴리오의 경우, 저는 UI와(인벤토리, 제작, 수리, 강화, 스킬)과 그에 필요한 시스템(아이템, 설계도, 스킬트리, NPC)을 설계하고 구현했습니다.
 같은 팀원이 작업한 영역의 코드들을 직접 통합하고 그 과정에서 발생하는 버그들을 찾아 수정했습니다. 
