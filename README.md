@@ -34,6 +34,7 @@ LikeLion_Individual
 LikeLion_Team
 
 팀 포트폴리오 유튜브 영상 URL: https://www.youtube.com/watch?v=-8x0Xg5oU64&feature=youtu.be
+
 팀 포트폴리오의 버전은 2022.3.30f1 입니다.
 
 
