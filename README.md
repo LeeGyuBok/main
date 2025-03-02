@@ -14,35 +14,23 @@
 
 각 영상에는 자막이 존재합니다.
 
-ChimeraSimulator
-영상 URL.
-https://youtu.be/4GUWe5mN1kc
+ChimeraSimulator 영상 URL: https://youtu.be/4GUWe5mN1kc
 
 LikeLion_Individual
 
-앵그리버드 모작 유튜브 영상 URL. 
-https://youtu.be/W9V4sujIsmU
-주요 스크립트 바로가기
-https://github.com/LeeGyuBok/main/tree/main/LikeLion_Individual/angrybirdportfolio/Assets/Scenes/InGameScene/Birds/Bird
+앵그리버드 모작 유튜브 영상 URL: https://youtu.be/W9V4sujIsmU
+주요 스크립트 바로가기: https://github.com/LeeGyuBok/main/tree/main/LikeLion_Individual/angrybirdportfolio/Assets/Scenes/InGameScene/Birds/Bird
 
-애니팡 모작 유튜브 영상 URL.
-https://youtu.be/i6UIrJH7xsM
-스크립트 바로가기.
-https://github.com/LeeGyuBok/main/tree/main/LikeLion_Individual/BlockPangportfolio/Assets/AniPang_portfolio/Scripts
+애니팡 모작 유튜브 영상 URL: https://youtu.be/i6UIrJH7xsM
+스크립트 바로가기: https://github.com/LeeGyuBok/main/tree/main/LikeLion_Individual/BlockPangportfolio/Assets/AniPang_portfolio/Scripts
 
-
-
-디펜스게임 유튜브 영상 URL.
-https://www.youtube.com/watch?v=SJBIS6LWEjU
-스크립트 및 폴더 바로가기
-https://github.com/LeeGyuBok/main/tree/main/LikeLion_Individual/Defenceportfolio/Assets/Defence/Scripts
+디펜스게임 유튜브 영상 URL: https://www.youtube.com/watch?v=SJBIS6LWEjU
+스크립트 및 폴더 바로가기: https://github.com/LeeGyuBok/main/tree/main/LikeLion_Individual/Defenceportfolio/Assets/Defence/Scripts
 
 
 LikeLion_Team
 
-팀 포트폴리오 유튜브 영상 URL.
-https://www.youtube.com/watch?v=-8x0Xg5oU64&feature=youtu.be
-
+팀 포트폴리오 유튜브 영상 URL: https://www.youtube.com/watch?v=-8x0Xg5oU64&feature=youtu.be
 팀 포트폴리오의 버전은 2022.3.30f1 입니다.
 
 
