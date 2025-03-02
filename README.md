@@ -9,22 +9,27 @@
 첫번째 개발자 교육과정을 통해 기본적인 프로그램의 설계과정을 배우고 협업을 경험했습니다. 5개의 팀 프로젝트를 진행하면서 프로젝트의 설계, 주요 기능 구현, 진행관리를 맡아 프로젝트를 진행했습니다.
 현재 수강중인 교육과정을 통해 2개의 게임관련 포트폴리오를 제작했으며 각각 앵그리버드, 애니팡의 모작입니다. 각 폴더에는 에셋, 패키지, 프로젝트세팅폴더와 그 하위 파일들이 포함되어있습니다.
 
+개인 프로젝트는 폴더명을 게임명으로 명명했고, 유니티 교육과정에서 진행했던 프로젝트들은 교육과정을 주관한 기관의 이름과 개인 및 팀 여부로 명명했습니다.
+
 
 각 영상에는 자막이 존재합니다.
 
-앵그리버드 모작 유튜브 영상 URL. 
-https://youtu.be/W9V4sujIsmU
+LikeLion_Individual{
+    앵그리버드 모작 유튜브 영상 URL. 
+    https://youtu.be/W9V4sujIsmU
 
-애니팡 모작 유튜브 영상 URL.
-https://youtu.be/i6UIrJH7xsM
+    애니팡 모작 유튜브 영상 URL.
+    https://youtu.be/i6UIrJH7xsM
 
-디펜스게임 유튜브 영상 URL.
-https://www.youtube.com/watch?v=SJBIS6LWEjU
+    디펜스게임 유튜브 영상 URL.
+    https://www.youtube.com/watch?v=SJBIS6LWEjU
+}
 
-팀 포트폴리오 유튜브 영상 URL.
-https://www.youtube.com/watch?v=-8x0Xg5oU64&feature=youtu.be
-
-팀 포트폴리오의 버전은 2022.3.30f1 입니다.
+LikeLion_Team{
+    팀 포트폴리오 유튜브 영상 URL.
+    https://www.youtube.com/watch?v=-8x0Xg5oU64&feature=youtu.be
+    팀 포트폴리오의 버전은 2022.3.30f1 입니다.
+}
 
 팀 포트폴리오의 경우, 저는 UI와(인벤토리, 제작, 수리, 강화, 스킬)과 그에 필요한 시스템(아이템, 설계도, 스킬트리, NPC)을 설계하고 구현했습니다.
 같은 팀원이 작업한 영역의 코드들을 직접 통합하고 그 과정에서 발생하는 버그들을 찾아 수정했습니다. 
